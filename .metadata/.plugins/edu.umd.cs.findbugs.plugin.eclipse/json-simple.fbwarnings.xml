@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1506892532671" analysisTimestamp="1506892530020" release="">
+  <Project projectName="json-simple">
+    <Jar>C:\Users\Jakab Anett\eclipse-workspace\json-simple\target\classes</Jar>
+    <Jar>C:\Users\Jakab Anett\eclipse-workspace\json-simple\target\test-classes</Jar>
+    <AuxClasspathEntry>C:\Users\Jakab Anett\eclipse-workspace\json-simple\target\test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jakab Anett\eclipse-workspace\json-simple\target\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jakab Anett\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_144\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Jakab Anett\eclipse-workspace\json-simple\src\main\java</SrcDir>
+    <SrcDir>C:\Users\Jakab Anett\eclipse-workspace\json-simple\src\test\java</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="BC_IMPOSSIBLE_DOWNCAST_OF_TOARRAY" priority="1" rank="5" abbrev="BC" category="CORRECTNESS" first="1">
+    <Class classname="org.json.simple.ItemList">
+      <SourceLine classname="org.json.simple.ItemList" sourcefile="ItemList.java" sourcepath="org/json/simple/ItemList.java"/>
+    </Class>
+    <Method classname="org.json.simple.ItemList" name="getArray" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.json.simple.ItemList" start="43" end="43" startBytecode="0" endBytecode="4" sourcefile="ItemList.java" sourcepath="org/json/simple/ItemList.java"/>
+    </Method>
+    <Type descriptor="[Ljava/lang/Object;" role="TYPE_FOUND"/>
+    <Type descriptor="[Ljava/lang/String;" role="TYPE_EXPECTED"/>
+    <Method classname="java.util.List" name="toArray" signature="()[Ljava/lang/Object;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.util.List"/>
+    </Method>
+    <SourceLine classname="org.json.simple.ItemList" start="43" end="43" startBytecode="9" endBytecode="9" sourcefile="ItemList.java" sourcepath="org/json/simple/ItemList.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="org.json.simple.JSONArrayTest">
+      <SourceLine classname="org.json.simple.JSONArrayTest" sourcefile="JSONArrayTest.java" sourcepath="org/json/simple/JSONArrayTest.java"/>
+    </Class>
+    <Method classname="org.json.simple.JSONArrayTest" name="testObjectArrayToString" signature="()V" isStatic="false">
+      <SourceLine classname="org.json.simple.JSONArrayTest" start="265" end="287" startBytecode="0" endBytecode="338" sourcefile="JSONArrayTest.java" sourcepath="org/json/simple/JSONArrayTest.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer"/>
+    </Method>
+    <SourceLine classname="org.json.simple.JSONArrayTest" start="268" end="268" startBytecode="57" endBytecode="57" sourcefile="JSONArrayTest.java" sourcepath="org/json/simple/JSONArrayTest.java"/>
+    <SourceLine classname="org.json.simple.JSONArrayTest" start="268" end="268" startBytecode="57" endBytecode="57" sourcefile="JSONArrayTest.java" sourcepath="org/json/simple/JSONArrayTest.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="org.json.simple.JSONValueTest">
+      <SourceLine classname="org.json.simple.JSONValueTest" sourcefile="JSONValueTest.java" sourcepath="org/json/simple/JSONValueTest.java"/>
+    </Class>
+    <Method classname="org.json.simple.JSONValueTest" name="testObjectArrayToString" signature="()V" isStatic="false">
+      <SourceLine classname="org.json.simple.JSONValueTest" start="210" end="232" startBytecode="0" endBytecode="338" sourcefile="JSONValueTest.java" sourcepath="org/json/simple/JSONValueTest.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer"/>
+    </Method>
+    <SourceLine classname="org.json.simple.JSONValueTest" start="213" end="213" startBytecode="57" endBytecode="57" sourcefile="JSONValueTest.java" sourcepath="org/json/simple/JSONValueTest.java"/>
+    <SourceLine classname="org.json.simple.JSONValueTest" start="213" end="213" startBytecode="57" endBytecode="57" sourcefile="JSONValueTest.java" sourcepath="org/json/simple/JSONValueTest.java"/>
+  </BugInstance>
+  <BugInstance type="DM_BOOLEAN_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="org.json.simple.Test">
+      <SourceLine classname="org.json.simple.Test" sourcefile="Test.java" sourcepath="org/json/simple/Test.java"/>
+    </Class>
+    <Method classname="org.json.simple.Test" name="testEncode" signature="()V" isStatic="false">
+      <SourceLine classname="org.json.simple.Test" start="299" end="382" startBytecode="0" endBytecode="1195" sourcefile="Test.java" sourcepath="org/json/simple/Test.java"/>
+    </Method>
+    <SourceLine classname="org.json.simple.Test" start="305" end="305" startBytecode="60" endBytecode="60" sourcefile="Test.java" sourcepath="org/json/simple/Test.java"/>
+    <SourceLine classname="org.json.simple.Test" start="305" end="305" startBytecode="60" endBytecode="60" sourcefile="Test.java" sourcepath="org/json/simple/Test.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="org.json.simple.Test">
+      <SourceLine classname="org.json.simple.Test" sourcefile="Test.java" sourcepath="org/json/simple/Test.java"/>
+    </Class>
+    <Method classname="org.json.simple.Test" name="testEncode" signature="()V" isStatic="false">
+      <SourceLine classname="org.json.simple.Test" start="299" end="382" startBytecode="0" endBytecode="1195" sourcefile="Test.java" sourcepath="org/json/simple/Test.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer"/>
+    </Method>
+    <SourceLine classname="org.json.simple.Test" start="303" end="303" startBytecode="32" endBytecode="32" sourcefile="Test.java" sourcepath="org/json/simple/Test.java"/>
+    <SourceLine classname="org.json.simple.Test" start="303" end="303" startBytecode="32" endBytecode="32" sourcefile="Test.java" sourcepath="org/json/simple/Test.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="org.json.simple.Test">
+      <SourceLine classname="org.json.simple.Test" sourcefile="Test.java" sourcepath="org/json/simple/Test.java"/>
+    </Class>
+    <Method classname="org.json.simple.Test" name="testDecode" signature="()V" isStatic="false">
+      <SourceLine classname="org.json.simple.Test" start="30" end="296" startBytecode="0" endBytecode="1635" sourcefile="Test.java" sourcepath="org/json/simple/Test.java"/>
+    </Method>
+    <SourceLine classname="org.json.simple.Test" start="98" end="106" startBytecode="349" endBytecode="444" sourcefile="Test.java" sourcepath="org/json/simple/Test.java"/>
+    <SourceLine classname="org.json.simple.Test" start="98" end="106" startBytecode="349" endBytecode="444" sourcefile="Test.java" sourcepath="org/json/simple/Test.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="org.json.simple.parser.JSONParser">
+      <SourceLine classname="org.json.simple.parser.JSONParser" sourcefile="JSONParser.java" sourcepath="org/json/simple/parser/JSONParser.java"/>
+    </Class>
+    <Method classname="org.json.simple.parser.JSONParser" name="parse" signature="(Ljava/io/Reader;Lorg/json/simple/parser/ContainerFactory;)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.json.simple.parser.JSONParser" start="112" end="265" startBytecode="0" endBytecode="1711" sourcefile="JSONParser.java" sourcepath="org/json/simple/parser/JSONParser.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer"/>
+    </Method>
+    <SourceLine classname="org.json.simple.parser.JSONParser" start="124" end="124" startBytecode="118" endBytecode="118" sourcefile="JSONParser.java" sourcepath="org/json/simple/parser/JSONParser.java"/>
+    <SourceLine classname="org.json.simple.parser.JSONParser" start="124" end="124" startBytecode="118" endBytecode="118" sourcefile="JSONParser.java" sourcepath="org/json/simple/parser/JSONParser.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="org.json.simple.parser.JSONParser">
+      <SourceLine classname="org.json.simple.parser.JSONParser" sourcefile="JSONParser.java" sourcepath="org/json/simple/parser/JSONParser.java"/>
+    </Class>
+    <Method classname="org.json.simple.parser.JSONParser" name="parse" signature="(Ljava/io/Reader;Lorg/json/simple/parser/ContentHandler;Z)V" isStatic="false">
+      <SourceLine classname="org.json.simple.parser.JSONParser" start="330" end="531" startBytecode="0" endBytecode="2244" sourcefile="JSONParser.java" sourcepath="org/json/simple/parser/JSONParser.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer"/>
+    </Method>
+    <SourceLine classname="org.json.simple.parser.JSONParser" start="353" end="353" startBytecode="167" endBytecode="167" sourcefile="JSONParser.java" sourcepath="org/json/simple/parser/JSONParser.java"/>
+    <SourceLine classname="org.json.simple.parser.JSONParser" start="353" end="353" startBytecode="167" endBytecode="167" sourcefile="JSONParser.java" sourcepath="org/json/simple/parser/JSONParser.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="org.json.simple.parser.Yylex">
+      <SourceLine classname="org.json.simple.parser.Yylex" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Class>
+    <Method classname="org.json.simple.parser.Yylex" name="zzUnpackAction" signature="()[I" isStatic="true">
+      <SourceLine classname="org.json.simple.parser.Yylex" start="55" end="58" startBytecode="0" endBytecode="11" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Method>
+    <LocalVariable name="offset" register="1" pc="15" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.json.simple.parser.Yylex" start="57" end="57" startBytecode="14" endBytecode="14" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    <SourceLine classname="org.json.simple.parser.Yylex" start="57" end="57" startBytecode="14" endBytecode="14" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="offset"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="org.json.simple.parser.Yylex">
+      <SourceLine classname="org.json.simple.parser.Yylex" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Class>
+    <Method classname="org.json.simple.parser.Yylex" name="zzUnpackAttribute" signature="()[I" isStatic="true">
+      <SourceLine classname="org.json.simple.parser.Yylex" start="202" end="205" startBytecode="0" endBytecode="11" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Method>
+    <LocalVariable name="offset" register="1" pc="15" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.json.simple.parser.Yylex" start="204" end="204" startBytecode="14" endBytecode="14" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    <SourceLine classname="org.json.simple.parser.Yylex" start="204" end="204" startBytecode="14" endBytecode="14" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="offset"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="org.json.simple.parser.Yylex">
+      <SourceLine classname="org.json.simple.parser.Yylex" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Class>
+    <Method classname="org.json.simple.parser.Yylex" name="zzUnpackRowMap" signature="()[I" isStatic="true">
+      <SourceLine classname="org.json.simple.parser.Yylex" start="88" end="91" startBytecode="0" endBytecode="11" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Method>
+    <LocalVariable name="offset" register="1" pc="15" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.json.simple.parser.Yylex" start="90" end="90" startBytecode="14" endBytecode="14" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    <SourceLine classname="org.json.simple.parser.Yylex" start="90" end="90" startBytecode="14" endBytecode="14" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="offset"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="org.json.simple.parser.Yylex">
+      <SourceLine classname="org.json.simple.parser.Yylex" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Class>
+    <Method classname="org.json.simple.parser.Yylex" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false">
+      <SourceLine classname="org.json.simple.parser.Yylex" start="292" end="293" startBytecode="0" endBytecode="68" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader"/>
+    </Method>
+    <SourceLine classname="org.json.simple.parser.Yylex" start="292" end="292" startBytecode="6" endBytecode="6" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    <SourceLine classname="org.json.simple.parser.Yylex" start="292" end="292" startBytecode="6" endBytecode="6" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="org.json.simple.parser.Yylex">
+      <SourceLine classname="org.json.simple.parser.Yylex" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Class>
+    <Method classname="org.json.simple.parser.Yylex" name="yylex" signature="()Lorg/json/simple/parser/Yytoken;" isStatic="false">
+      <SourceLine classname="org.json.simple.parser.Yylex" start="508" end="516" startBytecode="0" endBytecode="1695" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Method>
+    <Method classname="java.lang.Character" name="&lt;init&gt;" signature="(C)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Character"/>
+    </Method>
+    <Method classname="java.lang.Character" name="valueOf" signature="(C)Ljava/lang/Character;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Character"/>
+    </Method>
+    <SourceLine classname="org.json.simple.parser.Yylex" start="610" end="610" startBytecode="639" endBytecode="639" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    <SourceLine classname="org.json.simple.parser.Yylex" start="610" end="610" startBytecode="639" endBytecode="639" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="org.json.simple.parser.Yylex">
+      <SourceLine classname="org.json.simple.parser.Yylex" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Class>
+    <Field classname="org.json.simple.parser.Yylex" name="yycolumn" signature="I" isStatic="false">
+      <SourceLine classname="org.json.simple.parser.Yylex" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Field>
+    <SourceLine classname="org.json.simple.parser.Yylex" start="396" end="396" startBytecode="40" endBytecode="40" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="org.json.simple.parser.Yylex">
+      <SourceLine classname="org.json.simple.parser.Yylex" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Class>
+    <Field classname="org.json.simple.parser.Yylex" name="yyline" signature="I" isStatic="false">
+      <SourceLine classname="org.json.simple.parser.Yylex" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Field>
+    <SourceLine classname="org.json.simple.parser.Yylex" start="396" end="396" startBytecode="47" endBytecode="47" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="org.json.simple.parser.Yylex">
+      <SourceLine classname="org.json.simple.parser.Yylex" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Class>
+    <Field classname="org.json.simple.parser.Yylex" name="zzAtBOL" signature="Z" isStatic="false">
+      <SourceLine classname="org.json.simple.parser.Yylex" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+    </Field>
+    <SourceLine classname="org.json.simple.parser.Yylex" start="261" end="261" startBytecode="20" endBytecode="20" sourcefile="Yylex.java" sourcepath="org/json/simple/parser/Yylex.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="org.json.simple.parser.YylexTest">
+      <SourceLine classname="org.json.simple.parser.YylexTest" sourcefile="YylexTest.java" sourcepath="org/json/simple/parser/YylexTest.java"/>
+    </Class>
+    <Method classname="org.json.simple.parser.YylexTest" name="testYylex" signature="()V" isStatic="false">
+      <SourceLine classname="org.json.simple.parser.YylexTest" start="11" end="78" startBytecode="0" endBytecode="886" sourcefile="YylexTest.java" sourcepath="org/json/simple/parser/YylexTest.java"/>
+    </Method>
+    <Method classname="java.lang.Character" name="&lt;init&gt;" signature="(C)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Character"/>
+    </Method>
+    <Method classname="java.lang.Character" name="valueOf" signature="(C)Ljava/lang/Character;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Character"/>
+    </Method>
+    <SourceLine classname="org.json.simple.parser.YylexTest" start="51" end="51" startBytecode="272" endBytecode="272" sourcefile="YylexTest.java" sourcepath="org/json/simple/parser/YylexTest.java"/>
+    <SourceLine classname="org.json.simple.parser.YylexTest" start="51" end="51" startBytecode="272" endBytecode="272" sourcefile="YylexTest.java" sourcepath="org/json/simple/parser/YylexTest.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="org.json.simple.parser.Yytoken">
+      <SourceLine classname="org.json.simple.parser.Yytoken" sourcefile="Yytoken.java" sourcepath="org/json/simple/parser/Yytoken.java"/>
+    </Class>
+    <Method classname="org.json.simple.parser.Yytoken" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.json.simple.parser.Yytoken" start="29" end="56" startBytecode="0" endBytecode="295" sourcefile="Yytoken.java" sourcepath="org/json/simple/parser/Yytoken.java"/>
+    </Method>
+    <SourceLine classname="org.json.simple.parser.Yytoken" start="30" end="53" startBytecode="12" endBytecode="148" sourcefile="Yytoken.java" sourcepath="org/json/simple/parser/Yytoken.java"/>
+    <SourceLine classname="org.json.simple.parser.Yytoken" start="30" end="53" startBytecode="12" endBytecode="148" sourcefile="Yytoken.java" sourcepath="org/json/simple/parser/Yytoken.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 1 Oct 2017 23:09:10 +0200" total_classes="19" referenced_classes="148" total_bugs="18" total_size="1930" num_packages="2" java_version="1.8.0_144" vm_version="25.144-b01" cpu_seconds="12.00" clock_seconds="2.66" peak_mbytes="631.49" alloc_mbytes="1024.00" gc_seconds="0.02" priority_2="16" priority_1="2">
+    <PackageStats package="org.json.simple" total_bugs="6" total_types="12" total_size="1133" priority_2="5" priority_1="1">
+      <ClassStats class="org.json.simple.ItemList" sourceFile="ItemList.java" interface="false" size="94" bugs="1" priority_1="1"/>
+      <ClassStats class="org.json.simple.JSONArray" sourceFile="JSONArray.java" interface="false" size="210" bugs="0"/>
+      <ClassStats class="org.json.simple.JSONArrayTest" sourceFile="JSONArrayTest.java" interface="false" size="200" bugs="1" priority_2="1"/>
+      <ClassStats class="org.json.simple.JSONAware" sourceFile="JSONAware.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.json.simple.JSONObject" sourceFile="JSONObject.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="org.json.simple.JSONStreamAware" sourceFile="JSONStreamAware.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.json.simple.JSONValue" sourceFile="JSONValue.java" interface="false" size="125" bugs="0"/>
+      <ClassStats class="org.json.simple.JSONValueTest" sourceFile="JSONValueTest.java" interface="false" size="179" bugs="1" priority_2="1"/>
+      <ClassStats class="org.json.simple.Test" sourceFile="Test.java" interface="false" size="178" bugs="3" priority_2="3"/>
+      <ClassStats class="org.json.simple.Test$1" sourceFile="Test.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.json.simple.Test$1KeyFinder" sourceFile="Test.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="org.json.simple.Test$2" sourceFile="Test.java" interface="false" size="32" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.json.simple.parser" total_bugs="12" total_types="7" total_size="797" priority_2="11" priority_1="1">
+      <ClassStats class="org.json.simple.parser.ContainerFactory" sourceFile="ContainerFactory.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.json.simple.parser.ContentHandler" sourceFile="ContentHandler.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="org.json.simple.parser.JSONParser" sourceFile="JSONParser.java" interface="false" size="306" bugs="2" priority_2="2"/>
+      <ClassStats class="org.json.simple.parser.ParseException" sourceFile="ParseException.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="org.json.simple.parser.Yylex" sourceFile="Yylex.java" interface="false" size="333" bugs="8" priority_2="7" priority_1="1"/>
+      <ClassStats class="org.json.simple.parser.YylexTest" sourceFile="YylexTest.java" interface="false" size="62" bugs="1" priority_2="1"/>
+      <ClassStats class="org.json.simple.parser.Yytoken" sourceFile="Yytoken.java" interface="false" size="37" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="211" invocations="660" avgMicrosecondsPerInvocation="319" maxMicrosecondsPerInvocation="6318" standardDeviationMircosecondsPerInvocation="573"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="156" invocations="2" avgMicrosecondsPerInvocation="78476" maxMicrosecondsPerInvocation="117561" standardDeviationMircosecondsPerInvocation="39084"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="131" invocations="190" avgMicrosecondsPerInvocation="692" maxMicrosecondsPerInvocation="22452" standardDeviationMircosecondsPerInvocation="2514"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="131" invocations="148" avgMicrosecondsPerInvocation="885" maxMicrosecondsPerInvocation="12605" standardDeviationMircosecondsPerInvocation="1842"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="117" invocations="148" avgMicrosecondsPerInvocation="797" maxMicrosecondsPerInvocation="8436" standardDeviationMircosecondsPerInvocation="1311"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="117" invocations="171" avgMicrosecondsPerInvocation="688" maxMicrosecondsPerInvocation="11145" standardDeviationMircosecondsPerInvocation="1521"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="117" invocations="171" avgMicrosecondsPerInvocation="686" maxMicrosecondsPerInvocation="15273" standardDeviationMircosecondsPerInvocation="1701"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="108" invocations="171" avgMicrosecondsPerInvocation="631" maxMicrosecondsPerInvocation="17268" standardDeviationMircosecondsPerInvocation="1795"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="106" invocations="662" avgMicrosecondsPerInvocation="160" maxMicrosecondsPerInvocation="790" standardDeviationMircosecondsPerInvocation="74"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="94" invocations="514" avgMicrosecondsPerInvocation="183" maxMicrosecondsPerInvocation="2127" standardDeviationMircosecondsPerInvocation="265"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="93" invocations="188" avgMicrosecondsPerInvocation="499" maxMicrosecondsPerInvocation="12754" standardDeviationMircosecondsPerInvocation="1382"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="69" invocations="153" avgMicrosecondsPerInvocation="456" maxMicrosecondsPerInvocation="2532" standardDeviationMircosecondsPerInvocation="613"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="53" invocations="172" avgMicrosecondsPerInvocation="311" maxMicrosecondsPerInvocation="7149" standardDeviationMircosecondsPerInvocation="655"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="51" invocations="143" avgMicrosecondsPerInvocation="361" maxMicrosecondsPerInvocation="6837" standardDeviationMircosecondsPerInvocation="918"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="40" invocations="148" avgMicrosecondsPerInvocation="273" maxMicrosecondsPerInvocation="25845" standardDeviationMircosecondsPerInvocation="2117"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="36" invocations="148" avgMicrosecondsPerInvocation="246" maxMicrosecondsPerInvocation="1904" standardDeviationMircosecondsPerInvocation="351"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="34" invocations="19" avgMicrosecondsPerInvocation="1802" maxMicrosecondsPerInvocation="9602" standardDeviationMircosecondsPerInvocation="2486"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="30" invocations="19" avgMicrosecondsPerInvocation="1592" maxMicrosecondsPerInvocation="7451" standardDeviationMircosecondsPerInvocation="2199"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="28" invocations="171" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="4018" standardDeviationMircosecondsPerInvocation="421"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="26" invocations="110" avgMicrosecondsPerInvocation="241" maxMicrosecondsPerInvocation="2071" standardDeviationMircosecondsPerInvocation="364"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="26" invocations="616" avgMicrosecondsPerInvocation="42" maxMicrosecondsPerInvocation="496" standardDeviationMircosecondsPerInvocation="57"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="26" invocations="148" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="2453" standardDeviationMircosecondsPerInvocation="295"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="24" invocations="148" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="1026" standardDeviationMircosecondsPerInvocation="188"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="21" invocations="148" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="1479" standardDeviationMircosecondsPerInvocation="205"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="21" invocations="19" avgMicrosecondsPerInvocation="1124" maxMicrosecondsPerInvocation="5260" standardDeviationMircosecondsPerInvocation="1349"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="21" invocations="19" avgMicrosecondsPerInvocation="1111" maxMicrosecondsPerInvocation="6005" standardDeviationMircosecondsPerInvocation="1530"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="20" invocations="19" avgMicrosecondsPerInvocation="1096" maxMicrosecondsPerInvocation="8353" standardDeviationMircosecondsPerInvocation="1887"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="20" invocations="172" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="635" standardDeviationMircosecondsPerInvocation="115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="20" invocations="148" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="2044" standardDeviationMircosecondsPerInvocation="271"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="19" invocations="19" avgMicrosecondsPerInvocation="1012" maxMicrosecondsPerInvocation="3524" standardDeviationMircosecondsPerInvocation="1110"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="18" invocations="171" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="1508" standardDeviationMircosecondsPerInvocation="191"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1506892532670" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

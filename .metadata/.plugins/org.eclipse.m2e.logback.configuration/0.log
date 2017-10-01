@@ -1,0 +1,28 @@
+2017-10-01 22:27:09,219 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2017-10-01 22:34:23,884 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany.app:my-app:1.0-SNAPSHOT @ E:\mvn_project\my-app\pom.xml.
+2017-10-01 22:34:26,181 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /my-app/src/main/java
+2017-10-01 22:34:26,183 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /my-app/src/test/java
+2017-10-01 22:34:27,813 [Worker-19] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 12 sec
+2017-10-01 22:34:28,560 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-10-01 22:34:28,566 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvn_project\my-app\src\main\resources
+2017-10-01 22:34:28,569 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-10-01 22:34:28,574 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvn_project\my-app\src\test\resources
+2017-10-01 22:34:34,272 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-10-01 22:34:34,280 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvn_project\my-app\src\main\resources
+2017-10-01 22:34:34,282 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-10-01 22:34:34,290 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\mvn_project\my-app\src\test\resources
+2017-10-01 22:35:33,035 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2017-10-01 22:36:04,343 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\mvn_project\my-app
+2017-10-01 22:36:04,344 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B 
+2017-10-01 22:36:59,228 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-10-01 22:37:19,885 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\mvn_project\my-app
+2017-10-01 22:37:19,885 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B compiler
+2017-10-01 22:37:51,788 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-10-01 22:37:51,842 [Worker-19] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\mvn_project\my-app
+2017-10-01 22:37:51,850 [Worker-19] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B compiler
+2017-10-01 22:37:59,492 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-10-01 22:37:59,533 [Worker-36] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\mvn_project\my-app
+2017-10-01 22:37:59,544 [Worker-36] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B compiler
+2017-10-01 22:38:14,411 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\mvn_project\my-app
+2017-10-01 22:38:14,422 [Worker-27] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B compile
+2017-10-01 22:57:52,496 [Worker-6] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
